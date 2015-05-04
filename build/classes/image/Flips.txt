@@ -1,0 +1,41 @@
+public static void horizontalFilp(BufferedImage buff) {
+	int x = (buff.getMinX() + buff.getWidth()) / 2;
+	int x1 = x - 1;
+	int x2 = x + 1;
+	int y = buff.getMinY();
+	while(y < buff.getMinY() + buff.getHeight()) {
+		while(x1 > buff.getMinX()) {
+			int temp = buff.getRGB(x2, y);
+			buff.setRGB(x2, y, buff.getRGB(x1, y));
+			buff.setRGB(x1, y, temp);
+		}
+		y++;
+	}
+}
+
+public static void verticalFlip(BufferedImage buff) {
+	int y = (buff.getMinY() + buff.getHeight()) / 2;
+	int y1 = y - 1;
+	int y2 = y + 1;
+	int x = buff.getMinX();
+	while(x < buff.getMinX() + buff.getWidth()) {
+		while(y1 > buff.getMinY()) {
+			int temp = buff.getRGB(x, y2);
+			buff.setRGB(x, y2, buff.getRGB(x, y1));
+			buff.setRGB(x, y1, temp);
+		}
+		x++;
+	}
+	
+}
+
+public static void greyScale(BufferedImage buff) {
+	int x = buff.getMinX();
+	int y = buff.getMinY();
+	while(x < buff.setMinx + buff.getWidth()) {
+		x++
+		while(
+		
+	}
+
+}
